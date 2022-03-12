@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search.css">
+    <title>Document</title>
+</head>
+<body>
+ <!--Barre de navigation-->    
+    <nav>
+        <div>
+            <img src="./Images/group-2.svg" width="5%">
+            <a href="index.html" style="font-size: x-large;">[Events]</a>
+            <div class="navbar">
+                <img src="./Icones/search_icon.svg" width="20px">
+                <a href="#">Search</a>
+                <img src="./Icones/about_icon.svg" width="20px">
+                <a href="#">About</a>
+                <img src="./Icones/blog_icon.svg" width="20px">
+                <a href="#">Blog</a>
+                <img src="./Icones/more_icon.svg" width="20px">
+                <a href="#">More</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--espace entre header et section_1-->
+ <div class="espacement"> </div>
+
+    <section class="section_1">
+        <h1 > <center> <b>Filter by location, host, subjetct, date, daytime</b></center></h1>
+
+        <div class="label">
+   
+        <form method="post" action="SEARCH.php" id="form_1">
+       <div>
+            <label for="Location">Location</label><br>  
+            <input type="text" name="Location">
+      </div>
+            
+       <div>
+        <label for="Host">Host</label>  <br>
+        <input type="text" name="Host">
+       </div>
+           
+     <div>
+        <label for="Subject">Subject</label> 
+        <input type="text" name="Subject">
+     </div>
+     <div>
+        <label for="Initial_Date">Initial Date</label> 
+        <input type="text" name="Initial_Date" placeholder="06/18/2020">
+     </div>
+     <div>
+        <label for="Final_Date">Final Date</label> 
+        <input type="text" name="Final_Date" placeholder="06/18/2020">
+     </div>
+     <div>
+        <label for="Daytime">Daytime</label> 
+        <select name="Daytime" >
+            <option value="choose">choose</option>
+        </select>
+     </div>
+           <div>   
+            <input type="submit" value="Search">
+            <input type="submit" value="Clear Filter">
+           </div>
+        </div>
+      
+           
+        
+          
+        
+        
+           
+       
+        
+    </form>
+</div>
+    </section>
+
+
+    <section class="section_2">
+        <h1><center><b>Search result found 7[Events] Nearby.</b></center></h1> <br><br><br>
+        <center>
+            <div class="image_sec_2">
+                <div id="img1"><img src="./Images/group-2.svg" width="100%"></div>
+                <div id="img3"><img src="./Images/group-2.svg" width="100%"></div>
+                <div id="img2"><img src="./Images/group-2.svg" width="100%"></div>
+            </div>
+        </center>
+    </section>
+    <section class="section_3">
+        <div class="partie_haut">
+            <div id="lien_1">
+                <a href="#">FACEBOOK</a>
+                <a href="#">TWITTER</a>
+                <a href="#">INSTAGRAM</a>     
+                <a href="#">BLOG</a>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div id="lien_2">          
+              
+                <a href="#">HOME</a>
+                <a href="#">SEARCH</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">ADVERTISE</a>
+            </div>
+    </div> 
+        <br><br><br><br><br><br>
+        <div class="partie_bas">
+            <div id="Inscription">
+                <label for="Subscribe">Subscribe</label> <br> <br><br>
+                <input type="text" name="Subscribe" id="Subscribe" required placeholder="insert your e-mail here">
+                <input type="submit" value="send">
+        </div>
+        <div id="Contact"> 
+            <h1>Contact</h1> <br> <br> <br>
+            <p>Have a question or sugestion? </p> <br> <br>
+            <a href="Contact@Event.com">Contact@event.com</a>
+        </div>
+        <div id="A_propos">
+            <h1>About</h1> <br><br><br>
+            <p>[Event]is an online platformthat works to improve and increase <br>
+               social the conditions, when this nightmare that we are curently  <br>
+               living in is over <a href="learn_more">learn more.</a>
+            
+            </p>
+        </div>
+    </div>
+
+    </section>
+
+
+<!--footer-->
+<footer>
+    <section>
+        <div>
+            <a href="./index.html">HOME</a>
+            <a href="./search.html">SEARCH</a>
+            <a href="./#">ABOUT US</a>
+            <a href="./index.html">ADVERTISE</a>
+            <img style="background-color: #eee;" src="./Icones/locate_icon.svg" width="5%">
+            <a href="./index.html">FACEBOOK</a>
+            <a href="./index.html">TWITTER</a>
+            <a href="./index.html">INSTAGRAM</a>
+            <a href="./index.html">BLOG</a>
+            </div> 
+        </div>
+    </section>
+    <section class="footer">
+        <div>
+            <h4>Subscribe</h4>
+            <input style="color: rgba(12, 7, 7, 0.685); padding: 6px 0;" type="text" value="Inset your e-mail here"><button style="color:  #eee; background-color: #98a5a5; padding: 6px 4px;" type="submit" >send</button>
+        </div>
+        <div>
+            <h4>Contact</h4> 
+            <p>Have a questionor sugestion?</p>
+            <a style="color: #d35649;" href="">Contact@events.com</a>
+        </div>
+        <div>
+            <h4>About</h4>
+            <p>[Events] is an online plataform that works to improve and increase social life connections,when this nightmare that we are curently living in is over <a style="color: #d35649;" href="./about.html">learn more</a></p>
+        </div>   
+    </section>
+</footer>
+</body>
+</html>
